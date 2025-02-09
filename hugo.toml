@@ -1,0 +1,5 @@
+baseURL = "https://blog.alpha3.tech/"
+languageCode = "en-us"
+title = "Alpha3 | Blog"
+theme = "PaperMod"
+sitemap = { changefreq = "monthly", priority = 0.5 }
