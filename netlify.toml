@@ -1,3 +1,4 @@
+[build.environment]
 HUGO_VERSION = "0.141.0"
 NODE_VERSION = "22"
 TZ = "America/Los_Angeles"
