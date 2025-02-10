@@ -1,0 +1,18 @@
+{{- $posts := slice -}}
+{{- range .Site.RegularPages -}}
+    {{- $featuredImage := "" -}}
+    {{- with .Params.image -}}
+        {{- $featuredImage = . | absURL -}}
+    {{- end -}}
+    {{- $post := dict 
+        "title" .Title
+        "permalink" .Permalink
+        "summary" (.Summary | plainify)
+        "featuredImage" $featuredImage
+        "date" (.Date.Format "2006-01-02")
+    -}}
+    {{- $posts = $posts | append $post -}}
+{{- end -}}
+{
+    "posts": {{ $posts | jsonify }}
+}
