@@ -13,7 +13,8 @@
       <link>http://localhost:1313/posts/hi-im-ada/</link>
       <pubDate>Sun, 09 Feb 2025 15:27:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/hi-im-ada/</guid>
-      <description>&lt;p&gt;Hey hey hey&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hey hey hey&lt;/p&gt;
+&lt;p&gt;yo yo yo&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

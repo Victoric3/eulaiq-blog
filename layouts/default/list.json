@@ -1,0 +1,14 @@
+{
+    "posts": [
+        {{ range $index, $post := .Site.RegularPages }}
+        {{ if $index }}, {{ end }}
+        {
+            "title": {{ $post.Title | jsonify }},
+            "link": {{ $post.Permalink | jsonify }},
+            "date": {{ $post.Date.Format "2006-01-02" | jsonify }},
+            "description": {{ $post.Summary | plainify | jsonify }},
+            "featuredImage": {{ with $post.Params.image }}{{ . | jsonify }}{{ else }}""{{ end }}
+        }
+        {{ end }}
+    ]
+}
