@@ -1,0 +1,56 @@
+{{ define "main" }}
+<section class="blog" id="blog">
+    <div class="blog-content">
+        <div class="blog-grid">
+            {{ range .Paginator.Pages }}
+            <article class="blog-card">
+                <div class="image-wrapper">
+                    {{ if .Params.image }}
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}" class="featured-image">
+                    {{ else }}
+                    <img src="/assets/logo/alpha3.jpg" alt="Alpha3 Default" class="featured-image">
+                    {{ end }}
+                </div>
+                <div class="content">
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    <div class="post-meta">
+                        <span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+                    </div>
+                    {{ $content := .Content }}
+                    {{ $stripImage := findRE `<img[^>]+>` $content 1 }}
+                    {{ $summary := .Summary }}
+                    {{ if $stripImage }}
+                        {{ $summary = replaceRE `<img[^>]+>` `` .Summary }}
+                    {{ end }}
+                    <p>{{ $summary | truncate 120 }}</p>
+                    <a href="{{ .RelPermalink }}" class="read-more">
+                        Read More <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+
+        <!-- Pagination -->
+        {{ if or .Paginator.HasPrev .Paginator.HasNext }}
+        <div class="pagination">
+            {{ if .Paginator.HasPrev }}
+            <a href="{{ .Paginator.Prev.URL }}" class="pagination-btn prev">
+                <i class="bi bi-arrow-left"></i> Previous
+            </a>
+            {{ end }}
+            
+            <span class="pagination-info">
+                Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
+            </span>
+
+            {{ if .Paginator.HasNext }}
+            <a href="{{ .Paginator.Next.URL }}" class="pagination-btn next">
+                Next <i class="bi bi-arrow-right"></i>
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

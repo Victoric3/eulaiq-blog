@@ -6,8 +6,22 @@
     <description>Recent content in Posts on Alpha3</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Feb 2025 15:27:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 05:10:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>alpha3 is angry yo!</title>
+      <link>http://localhost:1313/posts/alpha3-is-angry-yo/</link>
+      <pubDate>Mon, 10 Feb 2025 05:10:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/alpha3-is-angry-yo/</guid>
+      <description>&lt;p&gt;test test test test test test test test test test test test, que que que&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>what&#39;s up</title>
+      <link>http://localhost:1313/posts/whats-up/</link>
+      <pubDate>Mon, 10 Feb 2025 05:09:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/whats-up/</guid>
+      <description>&lt;p&gt;Hey its your boy alpha3 from alphadotta dotta yo!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hi im ada</title>
       <link>http://localhost:1313/posts/hi-im-ada/</link>
@@ -15,6 +29,21 @@
       <guid>http://localhost:1313/posts/hi-im-ada/</guid>
       <description>&lt;p&gt;Hey hey hey&lt;/p&gt;
 &lt;p&gt;yo yo yo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>image should show</title>
+      <link>http://localhost:1313/posts/image-should-show/</link>
+      <pubDate>Fri, 10 Jan 2025 07:26:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/image-should-show/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;earth&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/uploads/hero_3.jpg&#34; title=&#34;hi hi hi&#34;&gt;&lt;/p&gt;
+&lt;p&gt;what&amp;rsquo;s up yo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>why not work</title>
+      <link>http://localhost:1313/posts/why-not-work/</link>
+      <pubDate>Fri, 10 Jan 2025 06:08:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/why-not-work/</guid>
+      <description>&lt;p&gt;this is surely back dated&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

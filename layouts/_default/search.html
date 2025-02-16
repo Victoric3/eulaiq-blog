@@ -1,0 +1,137 @@
+{{ define "main" }}
+<section class="search-section">
+    <div class="search-container">
+        <form id="searchForm" class="search-box" onsubmit="handleSearch(event)">
+            <i class="bi bi-search search-icon"></i>
+            <input 
+                id="searchInput" 
+                type="search" 
+                placeholder="Search by title, content, tags..." 
+                aria-label="Search" 
+                autocomplete="off"
+            >
+        </form>
+        <div class="search-info">
+            <span id="searchCount" class="search-count"></span>
+        </div>
+        <ul id="searchResults" class="search-results">
+            <p class="search-initial">Type to start searching...</p>
+        </ul>
+    </div>
+</section>
+
+<script>
+    let searchIndex = [];
+    const searchForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const searchCount = document.getElementById('searchCount');
+
+    // Initialize search index
+    async function initializeSearch() {
+        try {
+            const response = await fetch('/index.json');
+            console.log(response)
+            if (!response.ok) throw new Error('Failed to load search index');
+            const result = await response.json();
+            searchIndex = result.posts
+            console.log('Search index loaded:', searchIndex, 'items');
+        } catch (error) {
+            console.error('Error loading search index:', error);
+            searchResults.innerHTML = '<p class="search-error">Error loading search. Please try again later.</p>';
+        }
+    }
+
+    // Initialize on page load
+    initializeSearch();
+
+    function handleSearch(e) {
+        if (e) e.preventDefault();
+        const query = searchInput.value.trim().toLowerCase();
+        
+        if (!query) {
+            searchResults.innerHTML = '<p class="search-initial">Type to start searching...</p>';
+            searchCount.textContent = '';
+            return;
+        }
+
+        if (!Array.isArray(searchIndex)) {
+            searchResults.innerHTML = '<p class="search-error">Search index is loading...</p>';
+            return;
+        }
+
+        try {
+            const results = searchIndex.filter(item => 
+                (item.title && item.title.toLowerCase().includes(query)) ||
+                (item.content && item.content.toLowerCase().includes(query)) ||
+                (item.tags && item.tags.some(tag => tag.toLowerCase().includes(query))) ||
+                (item.categories && item.categories.some(cat => cat.toLowerCase().includes(query)))
+            );
+
+            displayResults(results, query);
+            
+            if (results.length > 0) {
+                searchResults.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        } catch (error) {
+            console.error('Search error:', error);
+            searchResults.innerHTML = '<p class="search-error">An error occurred while searching.</p>';
+        }
+    }
+
+    // Debounce function to limit how often the search runs
+    function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    }
+
+    // Handle input changes with debounce
+    searchInput.addEventListener('input', debounce(() => handleSearch(), 300));
+    
+    // Handle form submission
+    searchForm.addEventListener('submit', handleSearch);
+
+    function displayResults(results, query) {
+        if (!results.length) {
+            searchResults.innerHTML = `
+                <div class="no-results">
+                    <p>No results found for "${query}"</p>
+                    <span>Try different keywords or check your spelling</span>
+                </div>`;
+            searchCount.textContent = '0 results';
+            return;
+        }
+
+        searchCount.textContent = `${results.length} result${results.length === 1 ? '' : 's'}`;
+        
+        searchResults.innerHTML = results.map(item => `
+            <li class="search-result-item">
+                <a href="${item.permalink || ''}">
+                    <h3 class="search-result-title">${highlightMatch(item.title || '', query)}</h3>
+                    ${item.tags ? `
+                        <div class="search-result-tags">
+                            ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                    ` : ''}
+                    <p class="search-result-snippet">
+                        ${highlightMatch(item.summary || (item.content && item.content.slice(0, 150)) || '', query)}...
+                    </p>
+                </a>
+            </li>
+        `).join('');
+    }
+
+    function highlightMatch(text, query) {
+        if (!text) return '';
+        const regex = new RegExp(`(${query})`, 'gi');
+        return text.replace(regex, '<mark>$1</mark>');
+    }
+</script>
+{{ end }}

@@ -2,6 +2,89 @@ baseURL = "https://blog.alphathree.tech/"
 languageCode = "en-us"
 title = "Alpha3"
 theme = "PaperMod"
+enableInlineShortcodes = true
 sitemap = { changefreq = "monthly", priority = 0.5 }
+
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]  # Add JSON to enable search
+
+[params]
+# Theme Parameters
+defaultTheme = "dark"
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+customCSS = ["css/custom.css"]
+customJS = ["js/main.js"]  # Make sure this matches your file path
+paginate = 6
+
+# Enable search
+enableSearch = true
+searchPlaceholder = "Search posts..."
+
+# Configure Fuse.js search options
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 100
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+[params.assets]
+favicon = "/assets/logo/logo.png"
+favicon16x16 = "/assets/logo/logo.png"
+favicon32x32 = "/assets/logo/logo.png"
+
+# Home Info Parameters
+[params.homeInfoParams]
+Title = "Alpha3 Tech Blog"
+Content = """
+Welcome to Alpha3's official tech blog. Explore our insights, solutions, and innovations.
+"""
+
+# Social Icons
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/yourusername"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com/in/yourusername"
+
+[menu]
+[[menu.main]]
+identifier = "solutions"
+name = "Solutions"
+url = "https://alphathree.tech/#solutions"
+weight = 1
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "https://alphathree.tech/#about"
+weight = 2
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "https://blog.alphathree.tech"
+weight = 3
+
+[markup.highlight]
+noClasses = false
+lineNos = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allows HTML in content
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.87.0"

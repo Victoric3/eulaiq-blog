@@ -1,0 +1,67 @@
+<footer class="site-footer">
+    <!-- Gradient Background -->
+    <div class="footer-gradient"></div>
+
+    <div class="footer-container">
+        <!-- Main Footer Content -->
+        <div class="footer-content">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <div class="brand-header">
+                    <img src="/assets/logo/logo.png" alt="Alpha3 Logo" class="footer-logo">
+                    <h3 class="brand-title"><span class="gradient-text">lpha3</span></h3>
+                </div>
+                <p class="brand-description">Pioneering Innovative Solutions to Transform Human Living Experiences</p>
+                <div class="location-info">
+                    <i class="location-icon"></i>
+                    <span>Innovation Hub, Digital Frontier</span>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-navigation">
+                <h4 class="footer-heading">Navigation</h4>
+                <ul class="footer-links">
+                    {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- Solutions -->
+            <div class="footer-solutions">
+                <h4 class="footer-heading">Our Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="https://kingsheartapp.netlify.app">KingsHeart</a></li>
+                    <li><a href="https://alphamagnet3.onrender.com">AlphaMagnet3</a></li>
+                    <li><a href="#diverse">Diverse</a></li>
+                    <li><a href="#nexus">Nexus</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Links -->
+            <div class="footer-social">
+                <h4 class="footer-heading">Connect With Us</h4>
+                <div class="social-icons">
+                    {{ range .Site.Params.socialIcons }}
+                    <a href="{{ .url }}" class="social-link">
+                        <i class="bi bi-{{ .name }}"></i>
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; {{ now.Format "2006" }} Alpha3 Technologies. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#cookies">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,69 @@
+{{ define "main" }}
+<article class="post-single">
+    <div class="post-container">
+        <header class="post-header">
+            <h1 class="post-title">{{ .Title }}</h1>
+            <div class="post-meta">
+                <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+                {{ with .Params.author }}
+                <span class="post-author">By {{ . }}</span>
+                {{ end }}
+            </div>
+        </header>
+
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+
+        <footer class="post-footer">
+            {{ with .Params.tags }}
+            <div class="post-tags">
+                {{ range . }}
+                <a href="/tags/{{ . | urlize }}" class="post-tag">#{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </footer>
+    </div>
+
+    <div class="post-navigation">
+        {{ with .PrevInSection }}
+        <a href="{{ .Permalink }}" class="post-nav-link prev">
+            <div class="post-nav-image">
+                {{ if .Params.image }}
+                <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                {{ else }}
+                <img src="/assets/logo/alpha3.jpg" alt="Default">
+                {{ end }}
+            </div>
+            <div class="post-nav-content">
+                <span class="post-nav-label">
+                    <i class="bi bi-arrow-left"></i>
+                    Previous Post
+                </span>
+                <span class="post-nav-title">{{ .Title }}</span>
+            </div>
+        </a>
+        {{ end }}
+        
+        {{ with .NextInSection }}
+        <a href="{{ .Permalink }}" class="post-nav-link next">
+            <div class="post-nav-image">
+                {{ if .Params.image }}
+                <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                {{ else }}
+                <img src="/assets/logo/alpha3.jpg" alt="Default">
+                {{ end }}
+            </div>
+            <div class="post-nav-content">
+                <span class="post-nav-label">
+                    Next Post
+                    <i class="bi bi-arrow-right"></i>
+                </span>
+                <span class="post-nav-title">{{ .Title }}</span>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</article>
+{{ end }}
