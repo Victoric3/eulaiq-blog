@@ -1,7 +1,7 @@
 baseURL = "https://blog.alphathree.tech/"
 languageCode = "en-us"
-title = "Alpha3"
-theme = "PaperMod"
+title = "Alpha3 | Blog"
+theme = "PaperMod"  
 enableInlineShortcodes = true
 sitemap = { changefreq = "monthly", priority = 0.5 }
 
