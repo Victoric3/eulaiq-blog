@@ -5,6 +5,9 @@ theme = "PaperMod"
 enableInlineShortcodes = true
 sitemap = { changefreq = "monthly", priority = 0.5 }
 
+# Add this to your existing config
+googleAnalytics = "G-4PJNNJB69Q"  
+
 [outputs]
 home = ["HTML", "RSS", "JSON"]  # Add JSON to enable search
 
