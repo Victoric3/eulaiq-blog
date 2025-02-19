@@ -49,12 +49,8 @@ Welcome to Alpha3's official tech blog. Explore our insights, solutions, and inn
 
 # Social Icons
 [[params.socialIcons]]
-name = "github"
-url = "https://github.com/yourusername"
-
-[[params.socialIcons]]
 name = "linkedin"
-url = "https://linkedin.com/in/yourusername"
+url = "https://www.linkedin.com/company/alphathree-technologies"
 
 [menu]
 [[menu.main]]
