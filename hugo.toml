@@ -1,9 +1,9 @@
 baseURL = "https://blog.alphathree.tech/"
 languageCode = "en-us"
-title = "Alpha3 | Blog"
+title = "Alpha3 | Tech Blog - AI-driven solutions for business, creativity, and global impact"
 theme = "PaperMod"  
 enableInlineShortcodes = true
-sitemap = { changefreq = "monthly", priority = 0.5 }
+sitemap = { changefreq = "weekly", priority = 0.5, filename = "sitemap.xml" }
 
 # Add this to your existing config
 googleAnalytics = "G-4PJNNJB69Q"  
@@ -49,6 +49,32 @@ Title = "Alpha3 Tech Blog"
 Content = """
 Welcome to Alpha3's official tech blog. Explore our insights, solutions, and innovations.
 """
+
+# SEO Parameters
+description = "Alpha3's tech blog provides insights on AI-driven, digital transformation, and technology innovation. Expert articles on software development, cloud architecture, and tech trends."
+keywords = ["AI-driven", "digital transformation", "tech blog", "software development", "cloud architecture"]
+images = ["/assets/logo/alpha3.jpg"]
+
+# Author Info
+[params.author]
+name = "Alpha3 Technologies"
+image = "/assets/logo/logo.png"
+
+# Open Graph & Twitter Cards
+[params.social]
+twitter = "@alpha3tech" # Replace with your Twitter handle
+
+# Schema.org
+[params.schema]
+type = "Organization"
+name = "Alpha3 Technologies"
+description = "Technology solutions and digital transformation services"
+url = "https://alphathree.tech"
+logo = "/assets/logo/logo.png"
+sameAs = [
+    "https://www.linkedin.com/company/alphathree-technologies"
+    # Add other social profile URLs
+]
 
 # Social Icons
 [[params.socialIcons]]

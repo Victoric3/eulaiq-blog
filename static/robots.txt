@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blog.alphathree.tech/sitemap.xml
