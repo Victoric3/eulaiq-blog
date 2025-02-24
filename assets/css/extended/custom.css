@@ -11,13 +11,69 @@
     --color-neon-purple: #bc00ff;
     --neon-cyan: #00f3ff;
     --neon-purple: #bc00ff;
+
+    /* Primary Brand Colors */
+    --brand-deep-gold: #B18958;
+    --brand-warm-orange: #D97706;
+    
+    /* Neutral Colors */
+    --neutral-light-gray: #F3F4F6;
+    --neutral-dark-gray: #374151;
+
+    /* Dark Theme Colors */
+    --dark-bg: #1B1B1B;
+    --bg-glass: rgba(27, 27, 27, 0.9);
+
+    /* Text Colors */
+    --text-primary: #F8F9FA;
+    --text-dark: #2D2D2D;
+
+    /* Background color for cards */
+    --dark-bg-card: rgba(0, 243, 255, 0.1);
+    --dark-color-card: var(--neon-cyan);
+    
+    /* Semantic Aliases */
+    --color-primary: var(--brand-deep-gold);
+    --color-accent: var(--brand-warm-orange);
+    --color-background: var(--neutral-light-gray);
+    --color-surface: var(--neutral-light-gray);
+    --color-text: var(--neutral-dark-gray);
+    --color-text-inverse: var(--text-primary);
+
+    /* Gradients */
+    --gradient-warm: linear-gradient(135deg,
+        rgba(177, 137, 88, 0.08),
+        rgba(217, 119, 6, 0.08));
+    --gradient-professional: linear-gradient(135deg,
+        rgba(44, 82, 130, 0.08),
+        rgba(40, 94, 97, 0.08));
+    --gradient-highlight: linear-gradient(135deg,
+        var(--brand-deep-gold),
+        var(--brand-warm-orange));
 }
 
 /* Dark theme */
 [theme="dark"] {
-    --color-background: #0a1b2f;
-    --color-text: #f8f9fa;
-    --color-bg-glass: rgba(10, 27, 47, 0.9);
+    --color-background: var(--dark-bg);
+    --color-text: var(--text-primary);
+    --color-surface: var(--bg-glass);
+}
+
+/* Dark mode overrides */
+[data-theme="dark"] {
+    --color-background: var(--dark-bg);
+    --color-text: var(--text-primary);
+    --color-bg-glass: var(--bg-glass);
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+}
+
+[data-theme="light"] {
+    --color-background: #ffffff;
+    --color-text: #0a1b2f;
+    --color-bg-glass: rgba(248, 249, 250, 0.9);
+    background-color: var(--color-background);
+    color: var(--color-text);
 }
 
 /* Base Styles */
@@ -37,9 +93,9 @@ body {
 }
 
 body.dark {
-    --color-background: #0a1b2f !important;
-    --color-text: #f8f9fa;
-    --color-bg-glass: rgba(10, 27, 47, 0.9);
+    --color-background: var(--dark-bg) !important;
+    --color-text: var(--text-primary);
+    --color-bg-glass: var(--bg-glass);
 }
 
 /* Core CSS */
@@ -59,52 +115,56 @@ body::before {
 
 /* Header Container */
 .header {
-    border-bottom: 1px solid var(--color-brand-blue);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0.4rem 5%;
+    padding: 0.5rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--color-bg-glass);
+    background: var(--bg-glass);
     backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1000;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 0.5rem;
 }
 
 .logo-title {
     font-size: 2rem;
-    margin-left: -20px;
+    color: var(--text-primary);
+}
+
+/* Logo Styles */
+.logo {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+    margin: 0;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .gradient-text {
-    background: linear-gradient(45deg, var(--neon-cyan), var(--neon-purple));
+    background: linear-gradient(135deg, 
+        var(--brand-deep-gold), 
+        var(--brand-warm-orange), 
+        var(--neon-cyan));
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 #mobile-menu-btn {
     display: none;
 }
 
-/* Logo Styles */
-.logo {
-    width: 35px;
-    transition: transform 0.3s ease;
-}
-
-.logo:hover {
-    transform: translateY(-2px);
-}
 
 /* Navigation Links */
 .nav {
@@ -117,7 +177,7 @@ body::before {
 }
 
 .nav-link {
-    color: var(--color-text-primary);
+    color: white;
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
@@ -125,7 +185,7 @@ body::before {
 }
 
 .nav-link:hover {
-    color: var(--color-neon-cyan);
+    color: var(--brand-deep-gold);
 }
 
 .nav-link::after {
@@ -135,7 +195,7 @@ body::before {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, var(--color-neon-cyan), var(--color-neon-purple));
+    background: linear-gradient(90deg, var(--brand-deep-gold), var(--brand-warm-orange));
     transition: width 0.3s ease;
 
 }
@@ -175,7 +235,7 @@ body::before {
 
 /* CTA Button */
 .cta {
-    background: linear-gradient(135deg, var(--color-neon-cyan), var(--color-neon-purple));
+    background: linear-gradient(135deg, var(--brand-deep-gold), var(--brand-warm-orange));
     color: white;
     padding: 0.3rem 1.5rem;
     border-radius: 8px;
@@ -186,7 +246,7 @@ body::before {
 
 .cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(188, 0, 255, 0.4);
+    box-shadow: 0 4px 20px var(--brand-deep-gold);
 }
 
 /* Animation for Background Gradient */
@@ -231,7 +291,7 @@ body::before {
     }
 
     #mobile-menu-btn:hover {
-        color: var(--color-neon-cyan);
+        color: var(--brand-deep-gold);
     }
 }
 
@@ -252,7 +312,7 @@ body::before {
 }
 
 #theme-toggle:hover {
-    color: var(--color-neon-cyan);
+    color: var(--brand-deep-gold);
 }
 
 /* Add after existing styles */
@@ -298,6 +358,7 @@ body::before {
 .brand-header {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .footer-logo {
@@ -308,6 +369,7 @@ body::before {
 .brand-title {
     font-size: 1.5rem;
     font-weight: 700;
+    color: var(--text-primary);
 }
 
 .brand-description {
@@ -1122,6 +1184,6 @@ mark {
     }
 
     .mobile-menu-btn:hover {
-        color: var(--color-neon-cyan);
+        color: var(--brand-deep-gold);
     }
 }

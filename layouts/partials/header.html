@@ -1,36 +1,19 @@
 <header class="header">
+    <a href="{{ .Site.BaseURL }}">
     <div class="logo-container">
-        <a href="{{ .Site.BaseURL }}">
-            <img src="/assets/logo/logo.png" alt="{{ .Site.Title }} Logo" class="logo">
-        </a>
-            <h3 class="logo-title"><span class="gradient-text">lpha3</span></h3>
-    </div>
+            <img src="/assets/logo/eula-logo.png" alt="EulaIQ Medical Education Platform Logo" class="logo" loading="lazy" />
+            <h3 class="logo-title">EulaIQ</h3>
+        </div>
+    </a>
 
     <button id="mobile-menu-btn" class="bi bi-list"></button>
 
     <nav class="nav">
         {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" target="_blank" class="nav-link">{{ .Name }}</a>
+        <a href="{{ .URL }}" class="nav-link" target="_blank">{{ .Name }}</a>
         {{ end }}
-        
-        <div class="nav-dropdown">
-            <a href="#" class="nav-link operations-link">
-                Projects
-                <i class="bi bi-chevron-down operations-icon"></i>
-            </a>
-            <nav class="dropdown-menu">
-                <a href="https://eulaiq.com" target="_blank" class="nav-link">EulaIQ</a>
-                <a href="https://alphamagnet3.onrender.com" target="_blank" class="nav-link">AlphaMagnet3</a>
-                <a href="https://alphathree.tech/school" target="_blank" class="nav-link">Edu Web solutions</a>
-            </nav>
-        </div>
-
-        <a href="/search/" class="nav-link">
-            <i class="bi bi-search"></i>
-        </a>
 
         <i class="bi bi-moon-stars theme-toggle" id="theme-toggle"></i>
-        
-        <a href="https://alphathree.tech/#contact" class="cta">Join Future →</a>
+        <a href="#contact" class="cta">Join Now →</a>
     </nav>
 </header>

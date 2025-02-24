@@ -1,6 +1,6 @@
-baseURL = "https://blog.alphathree.tech/"
+baseURL = "https://blog.eulaiq.com/"
 languageCode = "en-us"
-title = "Alpha3 | Tech Blog - AI-driven solutions for business, creativity, and global impact"
+title = "EulaIQ | AI-Powered Medical Education - Interactive Learning Platform for Medical Students"
 theme = "PaperMod"  
 enableInlineShortcodes = true
 sitemap = { changefreq = "weekly", priority = 0.5, filename = "sitemap.xml" }
@@ -39,66 +39,83 @@ minMatchCharLength = 0
 keys = ["title", "permalink", "summary", "content"]
 
 [params.assets]
-favicon = "/assets/logo/logo.png"
-favicon16x16 = "/assets/logo/logo.png"
-favicon32x32 = "/assets/logo/logo.png"
+favicon = "/assets/logo/eula-logo.png"
+favicon16x16 = "/assets/logo/eula-logo.png"
+favicon32x32 = "/assets/logo/eula-logo.png"
 
 # Home Info Parameters
 [params.homeInfoParams]
-Title = "Alpha3 Tech Blog"
+Title = "EulaIQ Tech Blog"
 Content = """
-Welcome to Alpha3's official tech blog. Explore our insights, solutions, and innovations.
+Welcome to EulaIQ's official tech blog. Explore our insights, solutions, and innovations.
 """
 
 # SEO Parameters
-description = "Alpha3's tech blog provides insights on AI-driven, digital transformation, and technology innovation. Expert articles on software development, cloud architecture, and tech trends."
+description = "EulaIQ's tech blog provides insights on AI-driven, digital transformation, and technology innovation. Expert articles on software development, cloud architecture, and tech trends."
 keywords = ["AI-driven", "digital transformation", "tech blog", "software development", "cloud architecture"]
-images = ["/assets/logo/alpha3.jpg"]
+images = ["/assets/logo/logo.png"]
 
 # Author Info
 [params.author]
-name = "Alpha3 Technologies"
+name = "EulaIQ"
 image = "/assets/logo/logo.png"
 
 # Open Graph & Twitter Cards
 [params.social]
-twitter = "@alpha3tech" # Replace with your Twitter handle
+twitter = "@EulaIQtech" # Replace with your Twitter handle
 
 # Schema.org
 [params.schema]
 type = "Organization"
-name = "Alpha3 Technologies"
-description = "Technology solutions and digital transformation services"
-url = "https://alphathree.tech"
+name = "EulaIQ"
+description = "Interactive Learning Platform for Medical Students"
+url = "https://eulaiq.com"
 logo = "/assets/logo/logo.png"
 sameAs = [
-    "https://www.linkedin.com/company/alphathree-technologies"
-    # Add other social profile URLs
+    "https://www.linkedin.com/company/eulaiq"
 ]
 
 # Social Icons
 [[params.socialIcons]]
 name = "linkedin"
-url = "https://www.linkedin.com/company/alphathree-technologies"
+url = "https://www.linkedin.com/company/eulaiq"
 
 [menu]
 [[menu.main]]
-identifier = "solutions"
-name = "Solutions"
-url = "https://alphathree.tech/#solutions"
+identifier = "features"
+name = "Features"
+url = "https://eulaiq.com/#features"
 weight = 1
 
 [[menu.main]]
-identifier = "about"
-name = "About"
-url = "https://alphathree.tech/#about"
+identifier = "community"
+name = "Community"
+url = "https://eulaiq.com/#community"
 weight = 2
 
 [[menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "https://blog.alphathree.tech"
+identifier = "learning"
+name = "Learning"
+url = "https://eulaiq.com/#personalization"
 weight = 3
+
+[[menu.main]]
+identifier = "faq"
+name = "FAQ"
+url = "https://eulaiq.com/#Faq"
+weight = 4
+
+[[menu.footer]]
+identifier = "features"
+name = "Features"
+url = "https://eulaiq.com/#features"
+weight = 1
+
+[[menu.footer]]
+identifier = "faq"
+name = "FAQ"
+url = "https://eulaiq.com/#Faq"
+weight = 4
 
 [markup.highlight]
 noClasses = false

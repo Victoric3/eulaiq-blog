@@ -35,30 +35,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const themeToggle = document.getElementById('theme-toggle');
     
-    // Check for saved theme preference or default to 'light'
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', currentTheme);
+    // Check system preference first, then localStorage, default to 'light'
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const storedTheme = localStorage.getItem('theme');
+    const currentTheme = storedTheme || (prefersDark ? 'dark' : 'light');
     
-    // Update icon based on current theme
+    // Set initial theme
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    document.body.classList.toggle('dark', currentTheme === 'dark');
+    
+    // Set initial icon
     updateIcon(currentTheme);
     
     themeToggle.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        const newTheme = document.body.classList.contains('dark') ? 'light' : 'dark';
         
+        // Update body class and data attribute
+        document.body.classList.toggle('dark');
         document.documentElement.setAttribute('data-theme', newTheme);
+        
+        // Store preference
         localStorage.setItem('theme', newTheme);
+        
+        // Update icon
         updateIcon(newTheme);
     });
     
     function updateIcon(theme) {
         const icon = document.getElementById('theme-toggle');
-        if (theme === 'dark') {
-            icon.classList.remove('bi-sun');
-            icon.classList.add('bi-moon-stars');
-        } else {
-            icon.classList.remove('bi-moon-stars');
-            icon.classList.add('bi-sun');
-        }
+        if (!icon) return;
+        
+        // Always start fresh by removing both classes
+        icon.classList.remove('bi-sun', 'bi-moon-stars');
+        
+        // Add appropriate icon class
+        icon.classList.add(theme === 'dark' ? 'bi-moon-stars' : 'bi-sun');
     }
 });
