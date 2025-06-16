@@ -15,11 +15,7 @@ So we built a product.
 
 And now, we’re building a movement.
 
-
-
 👉🏽 [Try EulaIQ now](https://app.eulaiq.com) 
-
-
 
 🎯 What EulaIQ Does Right Now
 
@@ -35,13 +31,9 @@ Let’s start with the basics—what you can do today on EulaIQ:
 >
 > ❓ Smart Questions: Auto-generated questions to test understanding, with detailed analytics and explanations.
 
-
-
 ![EulaIQ's Audio Ui](/images/uploads/img-20250616-wa0001.jpg "EulaIQ's Audio Ui")
 
-
-
-⚙️ The Core Philosophy: Personalized and Bite-Sized.
+**⚙️ The Core Philosophy: Personalized and Bite-Sized.**
 
 EulaIQ is not just about converting dense materials into explainers or questions. It’s about changing the pace and way you learn:
 
@@ -53,19 +45,15 @@ EulaIQ is not just about converting dense materials into explainers or questions
 
 Instead, we help users:
 
-* Engage with materials in bursts (bite-sized content)
-* Reflect through personalized questions
-* Stay consistent by turning study into a habit
+* **Engage with materials in bursts (bite-sized content)**
+* **Reflect through personalized questions**
+* **Stay consistent by turning study into a habit**
 
 We believe the right tools should make you want to come back—not just because of pressure, but because of clarity.
 
-
-
 ![user flow](/images/uploads/image.png "User Flow")
 
-
-
-🔭 What’s Coming: The EulaIQ Vision
+**🔭 What’s Coming: The EulaIQ Vision**
 
 We’re not stopping at voice and questions.
 
@@ -86,7 +74,7 @@ This is just Phase 1 of a much bigger system:
 * 🎧 Interactive audio-based question/answer loops
 * 🗣️ Voice-command learning (your content, your pace, your language)
 
-Eula as Your Personal Tutor
+**Eula as Your Personal Tutor**
 
 In the near future, every user will have a personal tutor inside the app—Eula.
 
@@ -99,9 +87,7 @@ It will act:
 * **Track your understanding in real-time**
 * **Speak with you and learn how you learn**
 
-
-
-🏛️ The Bigger Play: Eula Arenas
+**🏛️ The Bigger Play: Eula Arenas**
 
 Once the tools are mature, we go beyond solo study.
 
@@ -109,22 +95,17 @@ We will launch Eula Arenas—virtual and physical communities organized by inter
 
 Inside each arena:
 
-Users collaborate to learn and build
+* Users collaborate to learn and build
+* Projects emerge from shared research
+* Startups form from well-directed curiosity
+* Mentorship, feedback, and real-world problem-solving happens organically
 
-Projects emerge from shared research
-
-Startups form from well-directed curiosity
-
-Mentorship, feedback, and real-world problem-solving happens organically
-
-
-
-💬 Want to Shape the Future With Us?
+**💬 Want to Shape the Future With Us?**
 
 This isn’t the final product. This is Day 1.
 
 We’re actively building, listening, and iterating—with our users, not just for them.
 
-Try it now: https://app.eulaiq.com
+[Try it now](https://app.eulaiq.com)
 
-Report bugs, suggest features, or just say hi: support@eulaiq.com
+Report bugs, suggest features, or just say hi: [support@eulaiq.com](mailto:support@eulaiq.com)
