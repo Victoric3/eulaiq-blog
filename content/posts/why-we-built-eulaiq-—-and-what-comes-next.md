@@ -1,6 +1,6 @@
 ---
 title: Why We Built EulaIQ — And What Comes Next
-date: 2025-06-16T18:12:00.000Z
+date: 2025-01-16T19:16:00.000Z
 image: /images/uploads/feature-graphic-2.png
 ---
 **Studying shouldn’t suck**
