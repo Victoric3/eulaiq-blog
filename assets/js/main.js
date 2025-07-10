@@ -1,11 +1,11 @@
 function toggleMobileMenu() {
     console.log("menu toggled")
-    const nav = document.querySelector('.nav-menu');
+    const nav = document.querySelector('.nav');
     const btn = document.getElementById('mobile-menu-btn');
     const body = document.body;
     
     if (nav && btn) {
-        nav.classList.toggle('active');
+        nav.classList.toggle('show');
         btn.classList.toggle('bi-list');
         btn.classList.toggle('bi-x');
         body.classList.toggle('menu-open');
@@ -18,15 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileBtn = document.getElementById('mobile-menu-btn');
     if (mobileBtn) {
         mobileBtn.addEventListener('click', toggleMobileMenu);
-    }
-
-    // Close menu when clicking outside
+    }    // Close menu when clicking outside
     document.addEventListener('click', function(e) {
-        const nav = document.querySelector('.nav-menu');
+        const nav = document.querySelector('.nav');
         const btn = document.getElementById('mobile-menu-btn');
         
         if (nav && btn && !nav.contains(e.target) && !btn.contains(e.target)) {
-            nav.classList.remove('active');
+            nav.classList.remove('show');
             btn.classList.remove('bi-x');
             btn.classList.add('bi-list');
             document.body.classList.remove('menu-open');
