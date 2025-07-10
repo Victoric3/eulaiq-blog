@@ -22,7 +22,7 @@
                     {{ if $stripImage }}
                         {{ $summary = replaceRE `<img[^>]+>` `` .Summary }}
                     {{ end }}
-                    <p>{{ $summary | truncate 120 }}</p>
+                    <p>{{ $summary | truncate 120 | safeHTML }}</p>
                     <a href="{{ .RelPermalink }}" class="read-more">
                         Read More <i class="bi bi-arrow-right"></i>
                     </a>

@@ -1,60 +1,139 @@
 <footer class="site-footer">
-    <div class="footer-gradient"></div>
+      <!-- Gradient Background -->
+      <div class="footer-gradient"></div>
 
-    <div class="footer-container reveal-up">
+      <div class="footer-container reveal-up">
+        <!-- Main Footer Content -->
         <div class="footer-content">
-            <div class="footer-brand">
-                <div class="brand-header">
-                    <img src="/assets/logo/eula-logo.png" alt="EulaIQ Logo" class="footer-logo">
-                    <h3 class="brand-title">EulaIQ</h3>
-                </div>
-                <p class="brand-description">Transforming  Education Through Interactive Learning Experiences</p>
-                <div class="location-info">
-                    <i class="location-icon"></i>
-                    <span>Global Learning Community</span>
-                </div>
+          <!-- Brand Column -->
+          <div class="footer-brand">
+            <div class="brand-header">
+              <img
+                src="./assets/logo/logo.png"
+                alt="EulaIQ Logo"
+                class="footer-logo"
+              />
+              <h3 class="brand-title">EulaIQ</h3>
             </div>
+            <p class="brand-description">
+              Transforming Education Through Interactive Learning Experiences
+            </p>
+            <div class="location-info">
+              <i class="bi bi-globe"></i>
+              <span>Global Learning Community</span>
+            </div>
+          </div>
 
-            <div class="footer-navigation">
-                <h4 class="footer-heading">Explore</h4>
-                <ul class="footer-links">
-                    {{ range .Site.Menus.footer }}
-                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                    {{ end }}
-                </ul>
-            </div>
+          <!-- Product Links -->
+          <div class="footer-navigation">
+            <h4 class="footer-heading">Product</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="https://app.eulaiq.com" target="_blank">Launch App</a>
+              </li>
+              <li>
+                <a href="https://app.eulaiq.com/tabs" target="_blank"
+                  >Library</a
+                >
+              </li>
+            </ul>
+          </div>
 
-            <div class="footer-solutions">
-                <h4 class="footer-heading">Resources</h4>
-                <ul class="footer-links">
-                    <li><a href="https:eulaiq.com/#how-it-works">How It Works</a></li>
-                    <li><a href="https:eulaiq.com/#benefits-section">Gamification</a></li>
-                    <li><a href="https:eulaiq.com/#personalization">Learning Paths</a></li>
-                    <li><a href="https:eulaiq.com/#community">Study Groups</a></li>
-                </ul>
-            </div>
+          <!-- Resources -->
+          <div class="footer-solutions">
+            <h4 class="footer-heading">Resources</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="https://blog.eulaiq.com" target="_blank">Blog</a>
+              </li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#Faq">Help Center</a></li>
+            </ul>
+          </div>
 
-            <div class="footer-social">
-                <h4 class="footer-heading">Join Our Community</h4>
-                <div class="social-icons">
-                    {{ range .Site.Params.socialIcons }}
-                    <a href="{{ .url }}" class="social-link" title="{{ .name }}">
-                        <i class="bi bi-{{ .name }}"></i>
-                    </a>
-                    {{ end }}
-                </div>
+          <!-- Account & Legal -->
+          <div class="footer-account">
+            <h4 class="footer-heading">Account</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="https://app.eulaiq.com/signin" target="_blank"
+                  >Sign In</a
+                >
+              </li>
+              <li>
+                <a href="https://app.eulaiq.com/signup" target="_blank"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Links -->
+          <div class="footer-social">
+            <h4 class="footer-heading">Follow Us</h4>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/company/eulaiq"
+                class="social-link"
+                title="Connect on LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@EulaIQ"
+                class="social-link"
+                title="Subscribe on YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@eulaiq"
+                class="social-link"
+                title="Follow on TikTok"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-tiktok"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/eulaiq"
+                class="social-link"
+                title="Follow on Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://blog.eulaiq.com"
+                class="social-link"
+                title="Read our Blog"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-newspaper"></i>
+              </a>
             </div>
+          </div>
         </div>
 
+        <!-- Bottom Bar -->
         <div class="footer-bottom">
-            <div class="copyright">
-                <p>&copy; {{ now.Format "2006" }} EulaIQ Learning Platform. All rights reserved.</p>
-                <div class="legal-links">
-                    <a href="https:eulaiq.com/extra_pages/privacy_policy">Privacy Policy</a>
-                    <a href="https:eulaiq.com/extra_pages/terms">Terms of Service</a>
-                    <a href="https:eulaiq.com/extra_pages/cookies">Cookies</a>
-                </div>
+          <div class="copyright">
+            <p>&copy; {{ now.Format "2006" }} EulaIQ Learning Platform. All rights reserved.</p>
+            <div class="legal-links">
+              <a href="./extra_pages/privacy_policy.html">Privacy Policy</a>
+              <a href="./extra_pages/terms.html">Terms of Service</a>
+              <a href="./extra_pages/cookies.html">Cookie Policy</a>
+              <a href="https://app.eulaiq.com/contact" target="_blank"
+                >Contact Us</a
+              >
             </div>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
