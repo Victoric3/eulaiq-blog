@@ -2,6 +2,7 @@ baseURL = "https://blog.eulaiq.com/"
 languageCode = "en-us"
 title = "EulaIQ | AI-Powered  Education - Interactive Learning Platform for  Students"
 theme = "PaperMod"  
+buildFuture = true
 enableInlineShortcodes = true
 sitemap = { changefreq = "weekly", priority = 0.5, filename = "sitemap.xml" }
 
