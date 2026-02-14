@@ -1,7 +1,1 @@
-{{ range .Site.Params.customJS -}}
-    <script src="{{ . | relURL }}"></script>
-{{- end }}
-
-{{- /* Footer custom content area start */ -}}
 <script src="{{ (resources.Get "js/main.js" | resources.Minify).RelPermalink }}"></script>
-{{- /* Footer custom content area end */ -}}

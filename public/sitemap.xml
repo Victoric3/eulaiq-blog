@@ -2,11 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-20T13:05:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-09-20T13:05:00+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/what-is-eulaiq-and-why-everyones-talking-about-it/</loc>
+    <lastmod>2025-09-20T13:05:00+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/the-day-i-realized-education-was-broken/</loc>
+    <lastmod>2025-06-15T14:01:00+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/why-we-made-eulaiq-free-even-though-its-hard-to-scale/</loc>
+    <lastmod>2025-06-09T19:16:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/why-i-dropped-out-of-pharmacy-school-to-build-eulaiq/</loc>
+    <lastmod>2025-06-08T19:10:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/why-we-built-eulaiq--and-what-comes-next/</loc>
+    <lastmod>2025-06-07T19:19:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

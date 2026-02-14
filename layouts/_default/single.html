@@ -4,9 +4,12 @@
         <header class="post-header">
             <h1 class="post-title">{{ .Title }}</h1>
             <div class="post-meta">
-                <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+                <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
                 {{ with .Params.author }}
-                <span class="post-author">By {{ . }}</span>
+                <span class="post-author">{{ . }}</span>
+                {{ end }}
+                {{ if .ReadingTime }}
+                <span>&middot; {{ .ReadingTime }} min read</span>
                 {{ end }}
             </div>
         </header>
@@ -31,34 +34,32 @@
         <a href="{{ .Permalink }}" class="post-nav-link prev">
             <div class="post-nav-image">
                 {{ if .Params.image }}
-                <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
                 {{ else }}
-                <img src="/assets/background/Eula dipa.jpg" alt="Default">
+                <img src="/assets/background/Eula dipa.jpg" alt="Previous" loading="lazy">
                 {{ end }}
             </div>
             <div class="post-nav-content">
                 <span class="post-nav-label">
-                    <i class="bi bi-arrow-left"></i>
-                    Previous Post
+                    <i class="bi bi-arrow-left"></i> Previous
                 </span>
                 <span class="post-nav-title">{{ .Title }}</span>
             </div>
         </a>
         {{ end }}
-        
+
         {{ with .NextInSection }}
         <a href="{{ .Permalink }}" class="post-nav-link next">
             <div class="post-nav-image">
                 {{ if .Params.image }}
-                <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
                 {{ else }}
-                <img src="/assets/background/Eula dipa.jpg" alt="Default">
+                <img src="/assets/background/Eula dipa.jpg" alt="Next" loading="lazy">
                 {{ end }}
             </div>
             <div class="post-nav-content">
                 <span class="post-nav-label">
-                    Next Post
-                    <i class="bi bi-arrow-right"></i>
+                    Next <i class="bi bi-arrow-right"></i>
                 </span>
                 <span class="post-nav-title">{{ .Title }}</span>
             </div>

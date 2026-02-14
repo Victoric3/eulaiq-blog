@@ -1,35 +1,31 @@
 baseURL = "https://blog.eulaiq.com/"
 languageCode = "en-us"
-title = "EulaIQ | AI-Powered  Education - Interactive Learning Platform for  Students"
+title = "EulaIQ Blog — Insights on AI, Animation & Education"
 theme = "PaperMod"  
 buildFuture = true
 enableInlineShortcodes = true
 sitemap = { changefreq = "weekly", priority = 0.5, filename = "sitemap.xml" }
 
-# Add this to your existing config
 googleAnalytics = "G-4PJNNJB69Q"  
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]  # Add JSON to enable search
+home = ["HTML", "RSS", "JSON"]
 
 [params]
-# Theme Parameters
-defaultTheme = "dark"
+defaultTheme = "light"
+disableThemeToggle = true
 ShowReadingTime = true
 ShowShareButtons = true
 ShowPostNavLinks = true
-ShowBreadCrumbs = true
+ShowBreadCrumbs = false
 ShowCodeCopyButtons = true
-ShowRssButtonInSectionTermList = true
+ShowRssButtonInSectionTermList = false
 customCSS = ["css/custom.css"]
-customJS = ["js/main.js"]  # Make sure this matches your file path
-paginate = 6
-
-# Enable search
+customJS = []
+paginate = 9
 enableSearch = true
-searchPlaceholder = "Search posts..."
+searchPlaceholder = "Search articles..."
 
-# Configure Fuse.js search options
 [params.fuseOpts]
 isCaseSensitive = false
 shouldSort = true
@@ -44,79 +40,67 @@ favicon = "/assets/logo/eula-logo.png"
 favicon16x16 = "/assets/logo/eula-logo.png"
 favicon32x32 = "/assets/logo/eula-logo.png"
 
-# Home Info Parameters
 [params.homeInfoParams]
-Title = "EulaIQ Tech Blog"
+Title = "The EulaIQ Blog"
 Content = """
-Welcome to EulaIQ's official tech blog. Explore our insights, solutions, and innovations.
+Stories, insights, and updates from the team turning lectures into animated videos.
 """
 
-# SEO Parameters
-description = "EulaIQ's tech blog provides insights on AI-driven, digital transformation, and technology innovation. Expert articles on software development, cloud architecture, and tech trends."
-keywords = ["AI-driven", "digital transformation", "tech blog", "software development", "cloud architecture"]
+description = "The EulaIQ Blog — stories and insights on AI-powered animation, education technology, and the future of learning content creation."
+keywords = ["EulaIQ", "AI animation", "education technology", "animated videos", "edtech blog", "lecture to video"]
 images = ["/assets/logo/logo.png"]
 
-# Author Info
 [params.author]
 name = "EulaIQ"
 image = "/assets/logo/logo.png"
 
-# Open Graph & Twitter Cards
 [params.social]
-twitter = "@EulaIQtech" # Replace with your Twitter handle
+twitter = "@EulaIQtech"
 
-# Schema.org
 [params.schema]
 type = "Organization"
 name = "EulaIQ"
-description = "Interactive Learning Platform for  Students"
+description = "We turn educational lectures into animated videos."
 url = "https://eulaiq.com"
 logo = "/assets/logo/logo.png"
 sameAs = [
-    "https://www.linkedin.com/company/eulaiq"
+    "https://www.linkedin.com/company/eulaiq",
+    "https://www.youtube.com/@EulaIQ",
+    "https://www.tiktok.com/@eulaiq",
+    "https://www.instagram.com/eulaiq"
 ]
 
-# Social Icons
 [[params.socialIcons]]
 name = "linkedin"
 url = "https://www.linkedin.com/company/eulaiq"
 
+[[params.socialIcons]]
+name = "youtube"
+url = "https://www.youtube.com/@EulaIQ"
+
+[[params.socialIcons]]
+name = "tiktok"
+url = "https://www.tiktok.com/@eulaiq"
+
 [menu]
 [[menu.main]]
-identifier = "features"
-name = "Features"
-url = "https://eulaiq.com/#features"
+identifier = "blog"
+name = "Blog"
+url = "/"
 weight = 1
 
 [[menu.main]]
-identifier = "community"
-name = "Community"
-url = "https://eulaiq.com/#community"
+identifier = "product"
+name = "Product"
+url = "https://eulaiq.com"
 weight = 2
 
 [[menu.main]]
-identifier = "learning"
-name = "Learning"
-url = "https://eulaiq.com/#personalization"
+identifier = "how-it-works"
+name = "How It Works"
+url = "https://eulaiq.com/#how-it-works"
 weight = 3
 
-[[menu.main]]
-identifier = "faq"
-name = "FAQ"
-url = "https://eulaiq.com/#Faq"
-weight = 4
-
-[[menu.footer]]
-identifier = "features"
-name = "Features"
-url = "https://eulaiq.com/#features"
-weight = 1
-
-[[menu.footer]]
-identifier = "faq"
-name = "FAQ"
-url = "https://eulaiq.com/#Faq"
-weight = 4
 
 [markup.highlight]
 noClasses = false
@@ -125,7 +109,7 @@ lineNos = true
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true  # Allows HTML in content
+      unsafe = true
 
 [module]
   [module.hugoVersion]

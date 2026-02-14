@@ -1,11 +1,77 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>EulaIQ | AI-Powered  Education - Interactive Learning Platform for  Students</title>
+    <title>EulaIQ Blog — Insights on AI, Animation &amp; Education</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on EulaIQ | AI-Powered  Education - Interactive Learning Platform for  Students</description>
+    <description>Recent content on EulaIQ Blog — Insights on AI, Animation &amp; Education</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 20 Sep 2025 13:05:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is EulaIQ and Why Everyone’s Talking About It</title>
+      <link>http://localhost:1313/posts/what-is-eulaiq-and-why-everyones-talking-about-it/</link>
+      <pubDate>Sat, 20 Sep 2025 13:05:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/what-is-eulaiq-and-why-everyones-talking-about-it/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;A person reviewing creative notes and design sketches pinned on a wall, representing brainstorming, planning, and idea development.&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/uploads/concept-1868728_1920.jpg&#34; title=&#34;The process&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Hey there, curious human 👋—it’s me, Euladipa, your friendly animation creature from the land of motion graphics.&lt;/p&gt;
+&lt;p&gt; If your one-hour math video takes 84 hours to edit—and you’re juggling a mini production studio in your pocket, with one app for cutting, another for effects, and a third for captions—plus a sprinkle of mobile templates and external tools to keep the workflow humming, you’ve come to the right place.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Day I Realized Education Was Broken</title>
+      <link>http://localhost:1313/posts/the-day-i-realized-education-was-broken/</link>
+      <pubDate>Sun, 15 Jun 2025 14:01:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/the-day-i-realized-education-was-broken/</guid>
+      <description>&lt;p&gt;I’ve always been the student who excelled. All through K–12, I was top of my class—not because I was naturally gifted, but because I simply outworked everyone.&lt;/p&gt;
+&lt;p&gt;I started preparing for university entrance exams years in advance. I devoured textbooks, practiced past questions, memorized entire chapters. For a long time, it worked.&lt;/p&gt;
+&lt;p&gt;But when I got into pharmacy school, everything changed. Suddenly, the volume of material multiplied. Lecturers moved at a brutal pace, dumping massive resources week after week, expecting us to absorb it all and somehow keep up.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why We Made EulaIQ Free (Even Though It’s Hard to Scale)</title>
+      <link>http://localhost:1313/posts/why-we-made-eulaiq-free-even-though-its-hard-to-scale/</link>
+      <pubDate>Mon, 09 Jun 2025 19:16:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/why-we-made-eulaiq-free-even-though-its-hard-to-scale/</guid>
+      <description>&lt;p&gt;This is not a “growth hack.”&lt;br&gt;
+It’s a decision born out of frustration, vision, and real love for the people we’re building for.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“How are you offering all this for free?”&lt;br&gt;
+“Is it sustainable?”&lt;br&gt;
+“Are you just buying users?”&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;We get those questions a lot.&lt;/p&gt;
+&lt;p&gt;So here’s the real story:&lt;br&gt;
+&lt;strong&gt;We made EulaIQ free — not because it’s easy, but because it’s the only way to truly solve the problem.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why I Dropped Out of Pharmacy School to Build EulaIQ</title>
+      <link>http://localhost:1313/posts/why-i-dropped-out-of-pharmacy-school-to-build-eulaiq/</link>
+      <pubDate>Sun, 08 Jun 2025 19:10:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/why-i-dropped-out-of-pharmacy-school-to-build-eulaiq/</guid>
+      <description>&lt;p&gt;People ask me why I dropped out of pharmacy school to build an AI study tool.&lt;/p&gt;
+&lt;p&gt;To some, it sounds reckless.&lt;br&gt;
+Honestly, it kind of was.&lt;br&gt;
+But sometimes you have to bet everything on the problem you can’t ignore.&lt;/p&gt;
+&lt;p&gt;Growing up, I was always around education.&lt;br&gt;
+My dad runs a K12 school, so most of my life has been filled with ideas around learning, teaching, and improving how we study.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why We Built EulaIQ — And What Comes Next</title>
+      <link>http://localhost:1313/posts/why-we-built-eulaiq--and-what-comes-next/</link>
+      <pubDate>Sat, 07 Jun 2025 19:19:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/why-we-built-eulaiq--and-what-comes-next/</guid>
+      <description>&lt;p&gt;Studying shouldn’t suck.&lt;/p&gt;
+&lt;p&gt;You shouldn’t dread opening a textbook.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EulaIQ&lt;/strong&gt; turns your notes into something you actually &lt;em&gt;want&lt;/em&gt; to come back to.&lt;/p&gt;
+&lt;p&gt;Right now, millions of students open a textbook and either binge-read or zone out.&lt;br&gt;
+They cram, skim, scroll, and repeat—without retention or feedback.&lt;br&gt;
+Education rewards this. Schools ignore it.&lt;br&gt;
+&lt;strong&gt;We won’t.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So we built a product.&lt;br&gt;
+And now, we’re building a movement.&lt;/p&gt;
+&lt;p&gt;👉🏽 &lt;a href=&#34;https://eulaiq.com&#34;&gt;Try EulaIQ now&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-what-eulaiq-does-right&#34;&gt;🎯 What EulaIQ Does Right&lt;/h2&gt;
+&lt;p&gt;Let’s start with the basics—what you can do &lt;em&gt;today&lt;/em&gt; on EulaIQ:&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

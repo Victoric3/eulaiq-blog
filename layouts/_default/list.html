@@ -1,4 +1,12 @@
 {{ define "main" }}
+<section class="blog-hero">
+    <div class="blog-hero-badge">
+        <i class="bi bi-journal-richtext"></i> EulaIQ Blog
+    </div>
+    <h1>Insights on AI, Animation &amp; Education</h1>
+    <p>Stories, updates, and ideas from the team turning lectures into animated videos.</p>
+</section>
+
 <section class="blog" id="blog">
     <div class="blog-content">
         <div class="blog-grid">
@@ -6,32 +14,30 @@
             <article class="blog-card">
                 <div class="image-wrapper">
                     {{ if .Params.image }}
-                    <img src="{{ .Params.image }}" alt="{{ .Title }}" class="featured-image">
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}" class="featured-image" loading="lazy">
                     {{ else }}
-                    <img src="/assets/background/Eula dipa.jpg" alt="EulaIQ Default" class="featured-image">
+                    <img src="/assets/background/Eula dipa.jpg" alt="EulaIQ" class="featured-image" loading="lazy">
                     {{ end }}
                 </div>
                 <div class="content">
-                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
                     <div class="post-meta">
-                        <span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+                        <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
+                        {{ if .Params.readingTime }}
+                        <span>&middot;</span>
+                        <span>{{ .Params.readingTime }}</span>
+                        {{ end }}
                     </div>
-                    {{ $content := .Content }}
-                    {{ $stripImage := findRE `<img[^>]+>` $content 1 }}
-                    {{ $summary := .Summary }}
-                    {{ if $stripImage }}
-                        {{ $summary = replaceRE `<img[^>]+>` `` .Summary }}
-                    {{ end }}
-                    <p>{{ $summary | truncate 120 | safeHTML }}</p>
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    {{ $summary := .Summary | plainify }}
+                    <p>{{ $summary | truncate 140 }}</p>
                     <a href="{{ .RelPermalink }}" class="read-more">
-                        Read More <i class="bi bi-arrow-right"></i>
+                        Read more <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
             </article>
             {{ end }}
         </div>
 
-        <!-- Pagination -->
         {{ if or .Paginator.HasPrev .Paginator.HasNext }}
         <div class="pagination">
             {{ if .Paginator.HasPrev }}
@@ -39,7 +45,7 @@
                 <i class="bi bi-arrow-left"></i> Previous
             </a>
             {{ end }}
-            
+
             <span class="pagination-info">
                 Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
             </span>

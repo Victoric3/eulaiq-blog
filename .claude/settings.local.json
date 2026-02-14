@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:eulaiq.com)",
+      "Bash(hugo:*)",
+      "Bash(netstat:*)",
+      "Bash(taskkill:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)"
+    ]
+  }
+}

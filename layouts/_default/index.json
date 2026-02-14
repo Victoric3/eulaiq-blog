@@ -1,13 +1,16 @@
 {{- $posts := slice -}}
-{{- range first 3 (where .Site.RegularPages "Type" "posts") -}}
+{{- range where .Site.RegularPages "Type" "posts" -}}
     {{- $featuredImage := "" -}}
     {{- with .Params.image -}}
         {{- $featuredImage = . | absURL -}}
     {{- end -}}
-    {{- $post := dict 
+    {{- $post := dict
         "title" .Title
         "permalink" .Permalink
         "summary" ((.Summary | plainify) | truncate 150)
+        "content" (.Plain | truncate 2000)
+        "tags" .Params.tags
+        "categories" .Params.categories
         "featuredImage" $featuredImage
     -}}
     {{- $posts = $posts | append $post -}}

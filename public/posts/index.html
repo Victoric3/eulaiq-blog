@@ -5,15 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Posts | Alpha3 | Blog</title>
+<title>Posts | EulaIQ Blog — Insights on AI, Animation &amp; Education</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Alpha3 | Blog">
-<meta name="author" content="">
+<meta name="description" content="Posts - EulaIQ Blog — Insights on AI, Animation &amp; Education">
+<meta name="author" content="map[image:/assets/logo/logo.png name:EulaIQ]">
 <link rel="canonical" href="http://localhost:1313/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.3481e16a9cbcfa43699b0c26c5adda26b729f0892cfefe401d1b400de2c86dda.css" integrity="sha256-NIHhapy8&#43;kNpmwwmxa3aJrcp8Iks/v5AHRtADeLIbdo=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/assets/logo/logo.png">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/logo/logo.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/logo/logo.png">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.4909b40d0385bad1266e1bc0982d0bccdd643e42e0d90614e4b3088601cb03b7.css" integrity="sha256-SQm0DQOFutEmbhvAmC0LzN1kPkLg2QYU5LMIhgHLA7c=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/assets/logo/eula-logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/logo/eula-logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/logo/eula-logo.png">
 <link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
@@ -28,50 +28,71 @@
         }
 
     </style>
-</noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 </head>
 
-<body class="list dark" id="top"><header class="header">
-    <div class="logo-container">
-        <a href="http://localhost:1313/">
-            <img src="/assets/logo/logo.png" alt="Alpha3 | Blog Logo" class="logo">
-        </a>
-            <h3 class="logo-title"><span class="gradient-text">lpha3</span></h3>
-    </div>
+<body class="list" id="top"><script>
+(function() {
+    var stored = localStorage.getItem('pref-theme');
+    var dark;
+    if (stored === 'dark') dark = true;
+    else if (stored === 'light') dark = false;
+    else dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (dark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.body.classList.add('dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.body.classList.remove('dark');
+    }
+})();
+</script>
 
-    <button id="mobile-menu-btn" class="bi bi-list"></button>
+<header class="header">
+    <a href="http://localhost:1313/" class="logo-link">
+        <img src="https://www.eulaiq.com/assets/logo/logo.png" alt="EulaIQ" class="logo" />
+        <span class="logo-title">EulaIQ</span>
+    </a>
 
-    <nav class="nav">
-        
-        <a href="https://alphathree.tech/#solutions" target="_blank" class="nav-link">Solutions</a>
-        
-        <a href="https://alphathree.tech/#about" target="_blank" class="nav-link">About</a>
-        
-        <a href="https://blog.alphathree.tech" target="_blank" class="nav-link">Blog</a>
-        
-        
-        <div class="nav-dropdown">
-            <a href="#" class="nav-link operations-link">
-                Projects
-                <i class="bi bi-chevron-down operations-icon"></i>
+    <nav class="nav" id="nav">
+        <a href="https://studio.eulaiq.com" target="_blank" rel="noopener" class="nav-link">Studio</a>
+        <a href="http://localhost:1313/" class="nav-link">Blog</a>
+        <a href="https://eulaiq.com/#Faq" class="nav-link">Support</a>
+
+        <div class="nav-actions">
+            <a href="http://localhost:1313/search/" class="nav-icon" aria-label="Search">
+                <i class="bi bi-search"></i>
             </a>
-            <nav class="dropdown-menu">
-                <a href="https://kingsheartapp.netlify.app" target="_blank" class="nav-link">KingsHeart</a>
-                <a href="https://alphamagnet3.onrender.com" target="_blank" class="nav-link">AlphaMagnet3</a>
-                <a href="https://alphathree.tech/school" target="_blank" class="nav-link">Edu Web solutions</a>
-            </nav>
+            <button id="theme-toggle" class="nav-icon" aria-label="Toggle theme">
+                <i class="bi bi-moon-stars" id="theme-icon"></i>
+            </button>
         </div>
 
-        <a href="/search/" class="nav-link">
-            <i class="bi bi-search"></i>
-        </a>
-
-        <i class="bi bi-moon-stars theme-toggle" id="theme-toggle"></i>
-        
-        <a href="https://alphathree.tech/#contact" class="cta">Join Future →</a>
+        <div class="auth-buttons">
+            <a href="https://studio.eulaiq.com/signin" target="_blank" rel="noopener" class="btn-signin">Sign In</a>
+            <a href="https://studio.eulaiq.com/auth" target="_blank" rel="noopener" class="btn-get-started">Get Started</a>
+        </div>
     </nav>
-</header><main class="main">
+
+    <button id="mobile-menu-btn" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+</header>
+<main class="main">
+<section class="blog-hero">
+    <div class="blog-hero-badge">
+        <i class="bi bi-journal-richtext"></i> EulaIQ Blog
+    </div>
+    <h1>Insights on AI, Animation &amp; Education</h1>
+    <p>Stories, updates, and ideas from the team turning lectures into animated videos.</p>
+</section>
+
 <section class="blog" id="blog">
     <div class="blog-content">
         <div class="blog-grid">
@@ -79,91 +100,21 @@
             <article class="blog-card">
                 <div class="image-wrapper">
                     
-                    <img src="/images/uploads/hero_3.jpg" alt="alpha3 is angry yo!" class="featured-image">
+                    <img src="/images/uploads/concept-1868728_1920.jpg" alt="What Is EulaIQ and Why Everyone’s Talking About It" class="featured-image" loading="lazy">
                     
                 </div>
                 <div class="content">
-                    <h3><a href="/posts/alpha3-is-angry-yo/">alpha3 is angry yo!</a></h3>
                     <div class="post-meta">
-                        <span class="date">February 10, 2025</span>
-                    </div>
-                    
-                    
-                    
-                    
-                    <p><p>test test test test test test test test test test test test, que que que</p></p>
-                    <a href="/posts/alpha3-is-angry-yo/" class="read-more">
-                        Read More <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </article>
-            
-            <article class="blog-card">
-                <div class="image-wrapper">
-                    
-                    <img src="/assets/logo/alpha3.jpg" alt="Alpha3 Default" class="featured-image">
-                    
-                </div>
-                <div class="content">
-                    <h3><a href="/posts/whats-up/">what&#39;s up</a></h3>
-                    <div class="post-meta">
-                        <span class="date">February 10, 2025</span>
-                    </div>
-                    
-                    
-                    
-                    
-                    <p><p>Hey its your boy alpha3 from alphadotta dotta yo!</p></p>
-                    <a href="/posts/whats-up/" class="read-more">
-                        Read More <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </article>
-            
-            <article class="blog-card">
-                <div class="image-wrapper">
-                    
-                    <img src="/images/uploads/hero_3.jpg" alt="Hi im ada" class="featured-image">
-                    
-                </div>
-                <div class="content">
-                    <h3><a href="/posts/hi-im-ada/">Hi im ada</a></h3>
-                    <div class="post-meta">
-                        <span class="date">February 9, 2025</span>
-                    </div>
-                    
-                    
-                    
-                    
-                    <p><p>Hey hey hey</p>
-<p>yo yo yo</p></p>
-                    <a href="/posts/hi-im-ada/" class="read-more">
-                        Read More <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </article>
-            
-            <article class="blog-card">
-                <div class="image-wrapper">
-                    
-                    <img src="/images/uploads/hero_3.jpg" alt="image should show" class="featured-image">
-                    
-                </div>
-                <div class="content">
-                    <h3><a href="/posts/image-should-show/">image should show</a></h3>
-                    <div class="post-meta">
-                        <span class="date">January 10, 2025</span>
-                    </div>
-                    
-                    
-                    
-                    
+                        <span class="date">Sep 20, 2025</span>
                         
+                    </div>
+                    <h3><a href="/posts/what-is-eulaiq-and-why-everyones-talking-about-it/">What Is EulaIQ and Why Everyone’s Talking About It</a></h3>
                     
-                    <p>&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;what&amp;rsquo;s up yo&lt;/p&gt;</p>
-                    <a href="/posts/image-should-show/" class="read-more">
-                        Read More <i class="bi bi-arrow-right"></i>
+                    <p>
+Hey there, curious human 👋—it’s me, Euladipa, your friendly animation creature from the land of motion graphics.
+If your one-hour math …</p>
+                    <a href="/posts/what-is-eulaiq-and-why-everyones-talking-about-it/" class="read-more">
+                        Read more <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
             </article>
@@ -171,28 +122,92 @@
             <article class="blog-card">
                 <div class="image-wrapper">
                     
-                    <img src="/assets/logo/alpha3.jpg" alt="Alpha3 Default" class="featured-image">
+                    <img src="/images/uploads/chatgpt-image-jul-15-2025-02_15_46-pm.png" alt="The Day I Realized Education Was Broken" class="featured-image" loading="lazy">
                     
                 </div>
                 <div class="content">
-                    <h3><a href="/posts/why-not-work/">why not work</a></h3>
                     <div class="post-meta">
-                        <span class="date">January 10, 2025</span>
+                        <span class="date">Jun 15, 2025</span>
+                        
                     </div>
+                    <h3><a href="/posts/the-day-i-realized-education-was-broken/">The Day I Realized Education Was Broken</a></h3>
                     
+                    <p>I’ve always been the student who excelled. All through K–12, I was top of my class—not because I was naturally gifted, but because I simply …</p>
+                    <a href="/posts/the-day-i-realized-education-was-broken/" class="read-more">
+                        Read more <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            
+            <article class="blog-card">
+                <div class="image-wrapper">
                     
+                    <img src="/images/uploads/eula-dipa-s-quote.png" alt="Why We Made EulaIQ Free (Even Though It’s Hard to Scale)" class="featured-image" loading="lazy">
                     
+                </div>
+                <div class="content">
+                    <div class="post-meta">
+                        <span class="date">Jun 9, 2025</span>
+                        
+                    </div>
+                    <h3><a href="/posts/why-we-made-eulaiq-free-even-though-its-hard-to-scale/">Why We Made EulaIQ Free (Even Though It’s Hard to Scale)</a></h3>
                     
-                    <p><p>this is surely back dated</p></p>
-                    <a href="/posts/why-not-work/" class="read-more">
-                        Read More <i class="bi bi-arrow-right"></i>
+                    <p>This is not a “growth hack.”
+It’s a decision born out of frustration, vision, and real love for the people we’re building for.
+“How are you …</p>
+                    <a href="/posts/why-we-made-eulaiq-free-even-though-its-hard-to-scale/" class="read-more">
+                        Read more <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            
+            <article class="blog-card">
+                <div class="image-wrapper">
+                    
+                    <img src="/images/uploads/early-prototype-sketch.png" alt="Why I Dropped Out of Pharmacy School to Build EulaIQ" class="featured-image" loading="lazy">
+                    
+                </div>
+                <div class="content">
+                    <div class="post-meta">
+                        <span class="date">Jun 8, 2025</span>
+                        
+                    </div>
+                    <h3><a href="/posts/why-i-dropped-out-of-pharmacy-school-to-build-eulaiq/">Why I Dropped Out of Pharmacy School to Build EulaIQ</a></h3>
+                    
+                    <p>People ask me why I dropped out of pharmacy school to build an AI study tool.
+To some, it sounds reckless.
+Honestly, it kind of was.
+But …</p>
+                    <a href="/posts/why-i-dropped-out-of-pharmacy-school-to-build-eulaiq/" class="read-more">
+                        Read more <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            
+            <article class="blog-card">
+                <div class="image-wrapper">
+                    
+                    <img src="/images/uploads/eulaiq.png" alt="Why We Built EulaIQ — And What Comes Next" class="featured-image" loading="lazy">
+                    
+                </div>
+                <div class="content">
+                    <div class="post-meta">
+                        <span class="date">Jun 7, 2025</span>
+                        
+                    </div>
+                    <h3><a href="/posts/why-we-built-eulaiq--and-what-comes-next/">Why We Built EulaIQ — And What Comes Next</a></h3>
+                    
+                    <p>Studying shouldn’t suck.
+You shouldn’t dread opening a textbook.
+EulaIQ turns your notes into something you actually want to come back to. …</p>
+                    <a href="/posts/why-we-built-eulaiq--and-what-comes-next/" class="read-more">
+                        Read more <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
             </article>
             
         </div>
 
-        
         
     </div>
 </section>
@@ -202,60 +217,82 @@
     
     <div class="footer-gradient"></div>
 
-    <div class="footer-container">
+    <div class="footer-container reveal-up">
         
         <div class="footer-content">
             
             <div class="footer-brand">
                 <div class="brand-header">
-                    <img src="/assets/logo/logo.png" alt="Alpha3 Logo" class="footer-logo">
-                    <h3 class="brand-title"><span class="gradient-text">lpha3</span></h3>
+                    <img src="https://www.eulaiq.com/assets/logo/logo.png" alt="EulaIQ Logo" class="footer-logo" />
+                    <h3 class="brand-title">EulaIQ</h3>
                 </div>
-                <p class="brand-description">Pioneering Innovative Solutions to Transform Human Living Experiences</p>
+                <p class="brand-description">
+                    We turn educational lectures into animated videos.
+                </p>
                 <div class="location-info">
-                    <i class="location-icon"></i>
-                    <span>Innovation Hub, Digital Frontier</span>
+                    <i class="bi bi-globe"></i>
+                    <span>Global Learning Community</span>
                 </div>
             </div>
 
             
             <div class="footer-navigation">
-                <h4 class="footer-heading">Navigation</h4>
+                <h4 class="footer-heading">Product</h4>
                 <ul class="footer-links">
-                    
-                    <li><a href="https://alphathree.tech/#solutions">Solutions</a></li>
-                    
-                    <li><a href="https://alphathree.tech/#about">About</a></li>
-                    
-                    <li><a href="https://blog.alphathree.tech">Blog</a></li>
-                    
+                    <li>
+                        <a href="https://studio.eulaiq.com" target="_blank">Launch App</a>
+                    </li>
+                    <li>
+                        <a href="https://studio.eulaiq.com" target="_blank">Library</a>
+                    </li>
                 </ul>
             </div>
 
             
             <div class="footer-solutions">
-                <h4 class="footer-heading">Our Solutions</h4>
+                <h4 class="footer-heading">Resources</h4>
                 <ul class="footer-links">
-                    <li><a href="https://kingsheartapp.netlify.app">KingsHeart</a></li>
-                    <li><a href="https://alphamagnet3.onrender.com">AlphaMagnet3</a></li>
-                    <li><a href="#diverse">Diverse</a></li>
-                    <li><a href="#nexus">Nexus</a></li>
+                    <li>
+                        <a href="https://blog.eulaiq.com" target="_blank">Blog</a>
+                    </li>
+                    <li>
+                        <a href="https://studio.eulaiq.com" target="_blank">Support</a>
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-account">
+                <h4 class="footer-heading">Account</h4>
+                <ul class="footer-links">
+                    <li>
+                        <a href="https://studio.eulaiq.com" target="_blank">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="https://studio.eulaiq.com" target="_blank">Sign Up</a>
+                    </li>
                 </ul>
             </div>
 
             
             <div class="footer-social">
-                <h4 class="footer-heading">Connect With Us</h4>
+                <h4 class="footer-heading">Follow Us</h4>
                 <div class="social-icons">
-                    
-                    <a href="https://github.com/yourusername" class="social-link">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    
-                    <a href="https://linkedin.com/in/yourusername" class="social-link">
+                    <a href="https://www.linkedin.com/company/eulaiq" class="social-link" title="Connect on LinkedIn" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-linkedin"></i>
                     </a>
-                    
+                    <a href="https://www.youtube.com/@EulaIQ" class="social-link" title="Subscribe on YouTube" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@eulaiq" class="social-link" title="Follow on TikTok" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                    <a href="https://www.instagram.com/eulaiq" class="social-link" title="Follow on Instagram" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://blog.eulaiq.com" class="social-link" title="Read our Blog" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-newspaper"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -263,106 +300,29 @@
         
         <div class="footer-bottom">
             <div class="copyright">
-                <p>&copy; 2025 Alpha3 Technologies. All rights reserved.</p>
+                <p>&copy; 2026 EulaIQ. All rights reserved.</p>
                 <div class="legal-links">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
-                    <a href="#cookies">Cookie Settings</a>
+                    <a href="https://www.eulaiq.com/privacy-policy">Privacy Policy</a>
+                    <a href="https://www.eulaiq.com/terms">Terms of Service</a>
+                    <a href="https://www.eulaiq.com/cookies">Cookie Policy</a>
+                    <a href="https://www.eulaiq.com/sitemap">Sitemap</a>
+                    <a href="https://studio.eulaiq.com" target="_blank">Contact Us</a>
                 </div>
             </div>
         </div>
     </div>
-</footer>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-
-function toggleMobileMenu() {
-    const nav = document.querySelector('.nav');
-    const btn = document.getElementById('mobile-menu-btn');
-    const body = document.body;
-
-    if (nav && btn) {
-        nav.classList.toggle('show');
-        btn.classList.toggle('bi-list');
-        btn.classList.toggle('bi-x');
-    }
-}
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    if (mobileBtn) {
-        mobileBtn.addEventListener('click', toggleMobileMenu);
-    }
-
-    
-    document.addEventListener('click', function(e) {
-        const nav = document.querySelector('.nav-menu');
-        const btn = document.getElementById('mobile-menu-btn');
-        
-        if (nav && btn && !nav.contains(e.target) && !btn.contains(e.target)) {
-            nav.classList.remove('active');
-            btn.classList.remove('bi-x');
-            btn.classList.add('bi-list');
-            document.body.classList.remove('menu-open');
-        }
+</footer><script>
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        var id = this.getAttribute("href").substr(1);
+        var el = document.querySelector("[id='" + decodeURIComponent(id) + "']");
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+        if (id === "top") history.replaceState(null, null, " ");
+        else history.pushState(null, null, "#" + id);
     });
-
-    const themeToggle = document.getElementById('theme-toggle');
-    
-    
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    
-    
-    updateIcon(currentTheme);
-    
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateIcon(newTheme);
-    });
-    
-    function updateIcon(theme) {
-        const icon = document.getElementById('theme-toggle');
-        if (theme === 'dark') {
-            icon.classList.remove('bi-sun');
-            icon.classList.add('bi-moon-stars');
-        } else {
-            icon.classList.remove('bi-moon-stars');
-            icon.classList.add('bi-sun');
-        }
-    }
 });
-
-const operationsLink = document.querySelector(".operations-link");
-const operationsIcon = document.querySelector(".operations-icon");
-
-
-operationsLink.addEventListener("mouseenter", () => { 
-    operationsIcon.classList.remove("bi-chevron-down");
-    operationsIcon.classList.add("bi-chevron-up");
-});
-
-operationsLink.addEventListener("mouseleave", () => { 
-    operationsIcon.classList.remove("bi-chevron-up");
-    operationsIcon.classList.add("bi-chevron-down");
-});
-</script></body>
+</script>
+</body>
 
 </html>
