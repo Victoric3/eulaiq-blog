@@ -1,3 +1,6 @@
+[functions]
+  directory = "netlify/functions"
+
 [build.environment]
 HUGO_VERSION = "0.143.1"
 NODE_VERSION = "22"
