@@ -1652,3 +1652,141 @@ mark {
 .post-container {
     animation: fadeInUp 0.5s var(--ease-out) both;
 }
+/* ============================================
+   AI LESSON TEACHER COMPONENTS
+   ============================================ */
+
+:root {
+    --accent-blue: #3b82f6;
+    --accent-purple: #8b5cf6;
+    --lesson-card-bg: #ffffff;
+    --lesson-text-dark: #1f2937;
+    --lesson-border: #e5e7eb;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.comparison-card {
+    background: var(--lesson-card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid var(--lesson-border);
+    color: var(--lesson-text-dark);
+}
+
+.dark .comparison-card {
+    background: #1f2937;
+    border-color: #374151;
+    color: #f3f4f6;
+}
+
+.comparison-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    margin-bottom: 1rem;
+}
+
+.card-icon .material-icons {
+    font-size: 2.5rem;
+    color: var(--accent-blue);
+}
+
+.comparison-card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    background: rgba(59, 130, 246, 0.05);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-blue);
+}
+
+.feature-icon {
+    margin-right: 1rem;
+    margin-top: 0.25rem;
+}
+
+.feature-icon .material-icons {
+    color: var(--accent-blue);
+}
+
+.feature-content h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+}
+
+.feature-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.cta-button-container {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.custom-cta-button {
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+    color: white !important;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.custom-cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.4);
+    filter: brightness(1.1);
+}
+
+/* Specific overrides for the new blog post */
+.post-content h3 {
+    color: var(--accent-blue);
+}
+
+.dark .post-content h3 {
+    color: #60a5fa;
+}
+
+/* Animation: Fade In Up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.post-container {
+    animation: fadeInUp 0.5s var(--ease-out) both;
+}
