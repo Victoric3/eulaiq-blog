@@ -1,12 +1,16 @@
 ---
 title: "Beyond the Chatbot: Why Real Learning Needs More Than Just a Text Box"
-date: 2024-05-01T10:00:00+01:00
+date: 2026-04-21T09:16:00.000+01:00
 draft: false
-summary: "Traditional AI is a great textbook, but a terrible teacher. Discover why the AI Lesson Teacher is the missing piece in the future of education."
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Digital_Learning_Concept.jpg/1024px-Digital_Learning_Concept.jpg"
-tags: ["AI", "Education", "EulaIQ", "Learning"]
+summary: Traditional AI is a great textbook, but a terrible teacher. Discover
+  why the AI Lesson Teacher is the missing piece in the future of education.
+image: /images/uploads/innovation-561388_1280.jpg
+tags:
+  - AI
+  - Education
+  - EulaIQ
+  - Learning
 ---
-
 You’re staring at your screen. Again.
 
 It’s 11:00 PM, and you’re trying to wrap your head around how a Mitochondria actually produces ATP, or how the Taylor Series expansion isn't just a random string of numbers. You’ve asked the world’s most famous AI chatbots to explain it. They’ve given you five paragraphs of perfectly punctuated text.
@@ -54,7 +58,6 @@ And the best part? You're in the driver's seat.
 
 ### Seeing is Believing
 
-![Student Engaged with AI](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Student_working_on_a_laptop.jpg/1024px-Student_working_on_a_laptop.jpg)
 *Learning shouldn't feel like a chore. It should feel like a conversation.*
 
 We aren't just making another study tool. We’re building the teacher we wish we had—one that never gets tired, knows every subject, and can show you exactly what you need to see to finally say, "Oh, I get it now!"
@@ -67,4 +70,4 @@ Don't stay stuck in the text-only era. Join our community to be the first to kno
 
 {{< custom-button link="https://discord.gg/nz9Hwv6y" text="Join Our Discord" >}}
 
----
+- - -
